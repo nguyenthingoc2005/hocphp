@@ -55,3 +55,38 @@ var fullName = new String('ngoc');
 - Một số case sử dụng backslash(\): var fullName = 'ngoc la \'cong chua\'';
 - Xem độ dài chuỗi: console.log(fullName.length)
 - Chú ý độ dài khi viết code
+- Template string ES6
+var firstName = 'Ngoc';
+var lastName = 'Nguyen';
+console.log(`Tôi là: ${firsstName} ${lastName}`);
+6. Làm việc với chuỗi: var myString = 'Hoc JS tai F8';
+- length: console.log(myString.length); -> độ dài chuỗi
+- find index: console.log(myString.indexOf('JS')) -> tìm kiếm vị trí (k có trả về -1) (lastIndexOf: vị trí cuối cùng; search: k tìm được bằng cách truyền tham số thứ 2)
+- cut string: console.log(myString.slice(4,6)) -> cắt chuỗi
+- replace: console.log(myString.replace('JS', 'Javascript')) -> thay thế{console.log(/JS/g, 'Javascript') -> thay thế tất cả}
+- convert to upper case: console.log(myString.toUpperCase()) -> thay tất cả thành chữ in hoa
+- convert to lower case: console.log(myString.toLowerCase()) -> thay tất cả thành chữ in thường
+- trim: console.log(myString.trim()) -> bỏ khoảng trắng đầu cuối
+- split: var languages = 'JS, PHP, Ruby';
+console.log(languages.split(', )) -> lấy ra thành mảng từ 1 chuỗi
+- get a charscter by index: console.log(myString.charAt(0)) -> lấy kí tự theo vị trí
+7. Kiểu số trong JS
+- Tạo giá trị number:
++ C1 var age = 18; var PI = 3.14; 
++ C2 var ortherNumber = new Number(9);
+- Làm việc với number
++ console.log( typeof age.toString());
++ console.log(PI.toFixed());
+8. Mảng trong JS
+- Tạo mảng: var languages = ['JS', 'PHP', 'Ruby'];
+- Kiểm tra data type: console.log(Array.isArray(languages))
+8. Làm việc với Array
+- to string: console.log(languages. toString()); -> chuyển sang chuỗi 
+- join: console.log(languages. join(', '));
+- pop: xóa phần tử cuối mảng và trả về phần tử đã xóa
+- push: thêm phần tử cuối mảng và trả về độ dài mảng mới
+- shift: xóa phần tử đầu mảng và trả về phần tử đã xóa
+- unshift: thêm phần tử đầu mảng và trả về độ dài mảng mới
+- spliicing: languages.splice(1, 2, 'Dart') -> xóa 1 element bất kì
+- concat: nối array console.log(languages.concat(languages2))
+- slicing: cắt 1 vài element của mảng console.log(languages.slice(1,2))
